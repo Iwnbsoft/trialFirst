@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace topDownShooter
+namespace topDownShooter.Camera
 {
     [CreateAssetMenu(menuName = "topDown Shooter/Camera/Camera Settings")]
 public class CameraSettings : ScriptableObject
@@ -15,15 +15,17 @@ public class CameraSettings : ScriptableObject
    }
    
     [Header("Position")]
+    
+    [SerializeField] private Vector3 _positionOffset;
+    public Vector3 PositionOffSet
+    {
+        get { return _positionOffset; }
+    }
+    
    [SerializeField] private float _positionLerp = 1;
    public float PositionLerp
    {
        get { return _positionLerp; }
-   }
-   [SerializeField] private Vector3 _positionOffset;
-   public Vector3 PositionOffSet
-   {
-       get { return _positionOffset; }
    }
 }    
 }
