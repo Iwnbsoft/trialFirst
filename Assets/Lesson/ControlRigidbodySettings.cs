@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Lessons
+namespace topDownShooter.PlayerMovement
 {
     [CreateAssetMenu(menuName = "Lessons/Lessons1/Control Rigidboty Settings")]
     public class ControlRigidbodySettings : ScriptableObject

@@ -121,6 +121,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &309417366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4511080366946142386, guid: 59a62e53061ed4f2a861172b9184a23c,
+    type: 3}
+  m_PrefabInstance: {fileID: 112233676548401254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &309417367
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309417366}
+  m_Material: {fileID: 13400000, guid: 597cefff8f50e4785a87d5bf49d9be9d, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,6 +332,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 112233676548401257, guid: 59a62e53061ed4f2a861172b9184a23c,
+        type: 3}
+      propertyPath: _settings
+      value: 
+      objectReference: {fileID: 11400000, guid: 0a89d7f18e9e14859a10a422dec32a3d,
+        type: 2}
     - target: {fileID: 618731723016425822, guid: 59a62e53061ed4f2a861172b9184a23c,
         type: 3}
       propertyPath: m_RootOrder
@@ -372,6 +397,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LocalPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565013030090727984, guid: 59a62e53061ed4f2a861172b9184a23c,
+        type: 3}
+      propertyPath: m_Drag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565013030090727984, guid: 59a62e53061ed4f2a861172b9184a23c,
+        type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565013030090727984, guid: 59a62e53061ed4f2a861172b9184a23c,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8101820156048019007, guid: 59a62e53061ed4f2a861172b9184a23c,
         type: 3}
