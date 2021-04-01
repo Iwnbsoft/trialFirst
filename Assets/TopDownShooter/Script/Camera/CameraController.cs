@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using topDownShooter.Shooting;
 
 namespace topDownShooter.Camera
 {
@@ -10,11 +11,17 @@ namespace topDownShooter.Camera
        [SerializeField] private CameraSettings _cameraSettings;
        [SerializeField] private Transform _targetTransform;
        [SerializeField] private Transform _cameraTransform;
+       public ShootingManager _ShootingManager;
 
        private void Update()
        {
           CameraRotationFollow();
-          CameraMovementFollow();
+          //CameraMovementFollow();
+          if (Input.GetKeyDown(KeyCode.Space))
+          {
+              Debug.Log("try shoot");
+              _ShootingManager.Shoot(_cameraTransform.position, _cameraTransform.forward);
+          }
        }
 
        private void CameraRotationFollow()
