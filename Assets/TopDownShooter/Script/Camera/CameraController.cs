@@ -20,7 +20,7 @@ namespace topDownShooter.Camera
           if (Input.GetKeyDown(KeyCode.Space))
           {
               Debug.Log("try shoot");
-              _ShootingManager.Shoot(_cameraTransform.position, _cameraTransform.forward);
+//              _ShootingManager.Shoot(_cameraTransform.position, _cameraTransform.forward);
           }
        }
 
