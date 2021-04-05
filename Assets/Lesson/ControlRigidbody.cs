@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace topDownShooter.PlayerMovement
+namespace topDownShooter.PlayerControls
 {
     public class ControlRigidbody : MonoBehaviour
     {
