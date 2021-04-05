@@ -14,3 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Horizontal: 0
   Vertical: 0
+  _axisActive: 1
+  AxisNameHorizontal: Horizontal
+  AxisNameVeritcal: Vertical
+  _keyBaseHorizontalActive: 0
+  positiveHorizontalKeyCode: 0
+  negativeHorizontalKeyCode: 0
+  _keyBaseVerticalActive: 0
+  positiveVerticalKeyCode: 0
+  negativeVerticalKeyCode: 0
+  _increaseAmount: 1
