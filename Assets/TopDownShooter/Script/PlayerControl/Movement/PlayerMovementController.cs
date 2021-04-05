@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using topDownShooter.PlayerInput;
 using UnityEngine;
 
-namespace topDownShooter.PlayerMovement
+namespace topDownShooter.PlayerControls
 {
 
 public class PlayerMovementController : MonoBehaviour
