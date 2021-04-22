@@ -13,10 +13,12 @@ namespace topDownShooter.Inventory
 
     [SerializeField] protected InventoryItemData _InventoryItemData;
     [SerializeField] protected T _prefab; //reference vermek için
+    protected T _instatiate;
 
     protected T InstantiateAndInitialiazePrefab(Transform parent)
     {
-        return Instantiate(_prefab, parent);
+        _instatiate = Instantiate(_prefab, parent);
+        return _instatiate;
     }
 
     }

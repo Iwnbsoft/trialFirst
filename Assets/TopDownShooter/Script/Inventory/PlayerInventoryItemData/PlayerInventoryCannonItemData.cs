@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UniRx;
 
 namespace topDownShooter.Inventory
 {
@@ -12,10 +14,48 @@ public class PlayerInventoryCannonItemData : AbstractPlayerInventoryItemData<Pla
     {
         get { return _damage; }
     }
-    public override void CreateIntoInventory(PlayerInventoryController targetPlayerInventory)
+
+    [SerializeField] private float _rpm = 1f;
+    public float RPM
     {
-        var instantiated = InstantiateAndInitialiazePrefab(targetPlayerInventory.parent);
+        get { return _rpm; }
+    }
+    
+    private float _lastShootTime;
+
+    public override void Initialize(PlayerInventoryController targetPlayerInventory)
+    { 
+        base.Initialize(targetPlayerInventory);
+        InstantiateAndInitialiazePrefab(targetPlayerInventory.parent);
+        targetPlayerInventory.ReactiveShootCommand.Subscribe(onReactiveShootCommand).AddTo(_compositeDisposable);
         Debug.Log("Canon item data");
     }
+
+    public override void Destroy()
+    {
+        //means that we are unsubscribing from all the events we add to this
+        _compositeDisposable.Dispose();
+        base.Destroy();
+    }
+
+    private void onReactiveShootCommand(Unit obj)
+    {
+        Debug.Log("reactive command shoot");
+        Shoot();
+    }
+
+    public void Shoot()
+    {
+        if (Time.time - _lastShootTime > _rpm)
+        {
+            _instatiated.Shoot();
+            _lastShootTime = Time.time;
+        }
+        else
+        {
+            Debug.LogError("you can't shoot now");
+        }
+    }
+    
 }    
 }
