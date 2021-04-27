@@ -339,6 +339,7 @@ GameObject:
   - component: {fileID: 1138366282}
   - component: {fileID: 1138366281}
   - component: {fileID: 1138366285}
+  - component: {fileID: 1138366286}
   m_Layer: 8
   m_Name: taban
   m_TagString: Untagged
@@ -432,6 +433,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26457c1cef9b2482a8365be2eeae9863, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1138366286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138366280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c78802a8ac9ca41519ce91c86c6021f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 1138366281}
 --- !u!1 &1290529837
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,7 +578,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967296799}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.826, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 907562287}
@@ -601,7 +615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd0404d112aee42ef9fa10b9a9b7c05a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inventoryController: {fileID: 0}
+  _inventoryController: {fileID: 1967296801}
   _shootInput: {fileID: 11400000, guid: 341bf52cfbadc4a9996c110833abd875, type: 2}
 --- !u!1001 &4958766439221860997
 PrefabInstance:

@@ -48,7 +48,7 @@ public class PlayerInventoryCannonItemData : AbstractPlayerInventoryItemData<Pla
     {
         if (Time.time - _lastShootTime > _rpm)
         {
-            _instatiated.Shoot();
+            _instantiated.Shoot();
             _lastShootTime = Time.time;
         }
         else

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using topDownShooter.Stat;
 
 namespace topDownShooter.Inventory
 {
@@ -27,6 +28,11 @@ public class ScriptableShootManager : AbstractScriptableManager<ScriptableShootM
         if (physic)
         {
             Debug.Log("Collider : " + rHit.collider.name);
+            int colliderInstanceId = rHit.collider.GetInstanceID();
+            if (DamagebleHelper.DamagebleList.ContainsKey(colliderInstanceId))
+            {
+                DamagebleHelper.DamagebleList[colliderInstanceId].Damage(5);
+            }
         }
     }
 }
