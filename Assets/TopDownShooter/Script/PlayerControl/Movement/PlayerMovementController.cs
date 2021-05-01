@@ -10,7 +10,7 @@ namespace topDownShooter.PlayerControls
 public class PlayerMovementController : MonoBehaviour
 {
     [SerializeField] private Rigidbody _rigidbody;
-    [SerializeField] private InputData _inputData;
+    [SerializeField] private AbstractInputData _inputData;
     [SerializeField] private PlayerMovementSettings _playerMovementSettings;
     [SerializeField] private Transform _targetTransform;
     //[SerializeField] private ControlRigidbodySettings _settings;

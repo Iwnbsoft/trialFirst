@@ -12,7 +12,8 @@ public class PlayerInventoryController : MonoBehaviour
 {
     [SerializeField] private AbstractBasePlayerInventoryItemData[] _inventoryItemDataArray;
     private List<AbstractBasePlayerInventoryItemData> _instantiatedItemDataList;
-    public Transform parent;
+    public Transform bodyParent;
+    public Transform CanonParent;
 
     public ReactiveCommand ReactiveShootCommand { get; private set; }
 

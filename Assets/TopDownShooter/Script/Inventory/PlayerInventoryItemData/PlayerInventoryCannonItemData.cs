@@ -26,7 +26,7 @@ public class PlayerInventoryCannonItemData : AbstractPlayerInventoryItemData<Pla
     public override void Initialize(PlayerInventoryController targetPlayerInventory)
     { 
         base.Initialize(targetPlayerInventory);
-        InstantiateAndInitialiazePrefab(targetPlayerInventory.parent);
+        InstantiateAndInitialiazePrefab(targetPlayerInventory.CanonParent);
         targetPlayerInventory.ReactiveShootCommand.Subscribe(onReactiveShootCommand).AddTo(_compositeDisposable);
         Debug.Log("Canon item data");
     }

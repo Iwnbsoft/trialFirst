@@ -9,7 +9,7 @@ public class PlayerInventoryBodyItemData : AbstractPlayerInventoryItemData<Playe
 {
     public override void Initialize(PlayerInventoryController targetPlayerInventory)
     {
-        var instantiated = InstantiateAndInitialiazePrefab(targetPlayerInventory.parent);
+        var instantiated = InstantiateAndInitialiazePrefab(targetPlayerInventory.bodyParent);
         Debug.Log("Body item data");
     }
 }

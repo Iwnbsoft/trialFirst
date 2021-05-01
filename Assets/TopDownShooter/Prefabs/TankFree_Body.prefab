@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2696301942128971250}
   - component: {fileID: 5524904211345457097}
   - component: {fileID: 7415494676552494987}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TankFree_Wheel_b_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 4249308588798121483}
   - component: {fileID: 3807919308010310344}
   - component: {fileID: 8204830755173928943}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TankFree_Wheel_f_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,8 @@ GameObject:
   - component: {fileID: 7514947260797186618}
   - component: {fileID: 5597315737911190241}
   - component: {fileID: -7156959604761648959}
-  m_Layer: 0
+  - component: {fileID: 130755661765614728}
+  m_Layer: 9
   m_Name: TankFree_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,6 +257,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b61f604abe4ae461f8064c559e808933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &130755661765614728
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2851328928736512378}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9107852, y: 1.423388, z: 2.6795902}
+  m_Center: {x: 0.00000035762787, y: -0.08577919, z: -0.046622455}
 --- !u!1 &6881219922845060602
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,7 +281,7 @@ GameObject:
   - component: {fileID: 7517870599263488668}
   - component: {fileID: 8735343099064122130}
   - component: {fileID: 5357136744223525630}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TankFree_Wheel_b_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,7 +360,7 @@ GameObject:
   - component: {fileID: 1378382501334630542}
   - component: {fileID: 1579593355826369750}
   - component: {fileID: 3513480706094366795}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TankFree_Wheel_f_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}

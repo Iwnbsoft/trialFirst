@@ -8,7 +8,7 @@ namespace topDownShooter.PlayerControls
 {
     public class TowerRotationController : MonoBehaviour
     {
-        [SerializeField] private InputData _rotationInput;
+        [SerializeField] private AbstractInputData _rotationInput;
         [SerializeField] private Transform _towerTransform;
         [SerializeField] private TowerRotationSettings _towerRotationSettings;
 

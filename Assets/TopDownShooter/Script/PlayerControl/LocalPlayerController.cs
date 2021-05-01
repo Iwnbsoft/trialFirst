@@ -10,7 +10,7 @@ namespace topDownShooter
 public class LocalPlayerController : MonoBehaviour
 {
     [SerializeField] private PlayerInventoryController _inventoryController;
-    [SerializeField] private InputData _shootInput;
+    [SerializeField] private AbstractInputData _shootInput;
 
     private void Update()
     {
